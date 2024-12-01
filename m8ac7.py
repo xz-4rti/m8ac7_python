@@ -5,7 +5,7 @@ import mysql.connector
 app = Flask(__name__)
 
 def registerConnection():
-    db = mysql.connector.connect(user='usuari1', password='',
+    db = mysql.connector.connect(user='usuari1', password='123',
                                host='localhost',
                                database='m8ac7')
     cursor = db.cursor()
@@ -23,4 +23,4 @@ def hello_world():
         flaskversion=flaskversion) 
 
 if __name__ == '__main__':
-   app.run()
+   app.run(debug=True)
